@@ -117,7 +117,7 @@ const Page = () => {
           </>
         ) : (
           <h4 className='text-center bg-white/10 rounded p-5'>
-            No hay resultados para la busqueda: '{queryParam}'
+            No hay resultados para la busqueda: &quot;{queryParam}&quot;'
           </h4>
         )}
       </div>
