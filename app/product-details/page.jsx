@@ -6,7 +6,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-const page = () => {
+const Page = () => {
   const params = useSearchParams();
   const productIdParam = params.get("productId");
 
@@ -83,4 +83,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

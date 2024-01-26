@@ -7,11 +7,10 @@ import { useSearchParams } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
-import Home from "@/components/Home";
 import RatingStars from "@/components/RatingStars";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const params = useSearchParams();
   const queryParam = params.get("query");
   const limitPerPage = 24;
@@ -126,4 +125,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

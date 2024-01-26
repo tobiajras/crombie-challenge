@@ -32,6 +32,8 @@ const InputSearch = () => {
         onChange={(e) => handleInputChange(e)}
         type='text'
         placeholder='Macbook Pro...'
+        id='inputSearch'
+        name='inputSearch'
       />
     </form>
   );
