@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import InputSearch from "./InputSearch";
 import Link from "next/link";
-
 import { RiContactsFill } from "react-icons/ri";
 import { FaCode } from "react-icons/fa";
 
@@ -23,9 +22,9 @@ const Home = () => {
           <span className='text-xl sm:text-3xl'>Crombie Challenge</span>
         </Link>
         <InputSearch />
-        <div className='flex gap-10 justify-center mt-6 text-white/70 max-[450px]:gap-5'>
+        <div className='flex gap-5 sm:gap-10 justify-center mt-6 text-white/70'>
           <Link
-            className='flex items-center gap-2 text-xl max-[450px]:text-base'
+            className='flex items-center gap-2 text-base sm:text-xl'
             href='https://tobiasajras.netlify.app/'
             target='_blank'
             rel='noopener noreferrer'
@@ -34,7 +33,7 @@ const Home = () => {
             <span>Tobias Ajras</span>
           </Link>
           <Link
-            className='flex items-center gap-2 text-xl max-[450px]:text-base'
+            className='flex items-center gap-2 text-base sm:text-xl'
             href='https://github.com/tobiajras/crombie-challenge'
             target='_blank'
             rel='noopener noreferrer'
