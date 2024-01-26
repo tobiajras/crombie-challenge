@@ -7,7 +7,7 @@ const InputSearch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    router.push(`/products?query=${search}`);
+    router.push(`/?query=${search}`);
   };
 
   const handleInputChange = (e) => {
@@ -17,13 +17,16 @@ const InputSearch = () => {
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form
+      className="w-full flex justify-center mt-5"
+      onSubmit={(e) => handleSubmit(e)}
+    >
       <input
-        className='appearance-none bg-transparent  border-b border-teal-500'
+        className="appearance-none outline-none bg-white py-3 px-5 rounded text-2xl w-[500px] text-black"
         value={search}
         onChange={(e) => handleInputChange(e)}
-        type='text'
-        placeholder='Macbook Pro...'
+        type="text"
+        placeholder="Macbook Pro..."
       />
     </form>
   );
