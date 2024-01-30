@@ -65,7 +65,7 @@ const Page = () => {
                 >
                   {group.products.map((product) => (
                     <Link
-                      href={`/product-details?productId=${product.id}`}
+                      href={`/product-details/${product.id}`}
                       key={product.id}
                     >
                       <div className='h-64 w-full sm:h-80'>
